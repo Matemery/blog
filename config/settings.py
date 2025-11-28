@@ -128,6 +128,9 @@ STATICFULES_DIRS =[str(BASE_DIR.joinpath("static"))]
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
-CRISPY_ALLOW_TEMPLATE_PACKS = 'bootstrap5'
+# Crispy Forms
+CRISPY_ALLOWED_TEMPLATE_PACKS = ['bootstrap5']
+CRISPY_TEMPLATE_PACK = 'bootstrap5'
 
-#CRISPY_TEMPLATE_
+# Login/Logout redirects
+LOGIN_REDIRECT_URL = 'pages:home'
