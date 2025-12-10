@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}
+Draft
+{% endblock title %}
+
+{% block content %}
+    <div class="container">
+        {% for item in drafts %}
+        <h1>{{ item.title }}</h1>
+        <h6>Author: {{ item.author }}</h6>
+        <p>Status: {{ item.status }}</p>
+        <br/>
+        {% endfor %}
+    </div>
+{% endblock content %}
